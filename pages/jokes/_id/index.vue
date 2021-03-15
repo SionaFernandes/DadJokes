@@ -1,8 +1,11 @@
 <template>
   <div>
-    <NuxtLink to="/jokes"> Jokes </NuxtLink>
-    <h3>{{ joke }}</h3>
-    <small>Joke ID: {{ $route.params.id }}</small>
+    <NuxtLink to="/jokes">Go back to Jokes </NuxtLink>
+
+    <v-card elevation="2" shaped class="pa-4 my-4">
+      <h3>{{ joke }}</h3>
+      <small>Joke ID: {{ $route.params.id }}</small>
+    </v-card>
   </div>
 </template>
 

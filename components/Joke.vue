@@ -1,9 +1,11 @@
 <template>
-  <NuxtLink :to="'jokes/' + id">
-    <div class="joke">
-      <p>{{ joke }}</p>
-    </div>
-  </NuxtLink>
+  <v-card elevation="2" shaped class="pa-4 my-4">
+    <NuxtLink :to="'jokes/' + id" class="text-decoration-none">
+      <div class="joke">
+        <p>{{ joke }}</p>
+      </div>
+    </NuxtLink>
+  </v-card>
 </template>
 <script>
 export default {
@@ -12,9 +14,7 @@ export default {
 };
 </script>
 <style>
-.joke {
-  border: 1px dotted #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
+a{
+  color: #000;
 }
 </style>

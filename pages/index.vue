@@ -3,6 +3,7 @@
     <v-col cols="12" sm="8" md="6">
       <div class="text-center pa-6">
         <h1>Welcome to the jokes Page</h1>
+         <p>Corny jokes here</p>
       </div>
     </v-col>
   </v-row>
