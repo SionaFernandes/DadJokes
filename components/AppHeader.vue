@@ -12,3 +12,8 @@ export default {
     name:"AppHeader"
 }
 </script>
+<style>
+ul{
+  list-style: none;
+}
+</style>
