@@ -1,7 +1,9 @@
 <template>
-  <div class="joke">
-    <p>{{ joke }}</p>
-  </div>
+  <NuxtLink :to="'jokes/' + id">
+    <div class="joke">
+      <p>{{ joke }}</p>
+    </div>
+  </NuxtLink>
 </template>
 <script>
 export default {
@@ -10,9 +12,9 @@ export default {
 };
 </script>
 <style>
-.joke{
-    border: 1px dotted #ccc;
-    padding: 1rem;
-    margin: 1rem 0 ;
+.joke {
+  border: 1px dotted #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
 }
 </style>
